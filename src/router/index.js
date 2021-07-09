@@ -1,4 +1,4 @@
-import { createRouter , createWebHashHistory} from 'vue-router' 
+import { createRouter , createWebHistory} from 'vue-router' 
 
 // 获取路由信息
 const files = require.context('@/pages', true, /router\.js$/);
@@ -9,7 +9,7 @@ const routes = files.keys().map(key => {
 
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
