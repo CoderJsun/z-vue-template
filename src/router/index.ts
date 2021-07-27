@@ -8,11 +8,13 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: '/login',
-    component: () => import('pages/login/login.vue')
+    component: () =>
+      import(/*webpackChunkName:'login-chunk'*/ 'pages/login/login.vue')
   },
   {
     path: '/home',
-    component: () => import('pages/home/home.vue')
+    component: () =>
+      import(/*webpackChunkName:'home-chunk'*/ 'pages/home/home.vue')
   }
 ]
 
